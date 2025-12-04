@@ -2,7 +2,8 @@
   body {
     background: #23255a;
   }
-  
+
+  /* HEADER STUFF */
   .site-name {
     font-size: 22px;
     font-weight: 700;
@@ -100,4 +101,43 @@
     opacity: 0.8;
   }
 
+  /* END OF HEADER */
+
+  /* BANNER STUFF */
+
+  .banner{
+    position:relative;
+    height:48vh;          
+    min-height:220px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    color:#fff;
+    overflow:hidden;
+  }
+  
+  .banner-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35));
+    pointer-events:none;
+  }
+  
+  .banner-title{
+    position:relative; 
+    text-align:center;
+    z-index:2;
+  }
+  .banner-title h1{
+    margin:0;
+    font-family:'Cinzel Decorative',serif;
+    font-size:clamp(28px,6vw,96px); 
+    letter-spacing:1px;
+    color:#fff;
+    text-shadow:0 6px 24px rgba(0,0,0,0.45);
+  }
+  /* END OF BANNER*/
 </style>
