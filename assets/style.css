@@ -22,7 +22,7 @@
     left: 2%;
     right: 2%;
   
-    background: #23255a;
+    background: transparent;
     padding: 16px 24px;
     border-radius: 12px;
     
@@ -31,7 +31,18 @@
     justify-content: space-between;
     
     z-index: 9999;
+    box-shadow: none;
+    transition:
+      background 0.28s ease,
+      box-shadow 0.28s ease,
+      backdrop-filter 0.28s ease;
+  }
+
+  .header.scrolled{
+    background: rgba(0,0,0,0.85);
     box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
   }
   
   .header-right {
