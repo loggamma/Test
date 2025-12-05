@@ -1,7 +1,5 @@
 <style>
  /* SET STUFF */
-  @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
-
   * { box-sizing: border-box; }
   
   html, body {
@@ -263,7 +261,7 @@
   }
 
   .darkblue-box-header {
-    font-family: 'Cinzel Decorative', cursive, serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 48px;
     color: #fff;
     text-align: center;
