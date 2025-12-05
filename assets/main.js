@@ -1,5 +1,5 @@
 /* ==== IMPORTS ==== */
-fetch("../assets/includes/header.html")
+fetch("./includes/header.html")
   .then(response => response.text())
   .then(html => {
     document.getElementById("header-container").innerHTML = html;
