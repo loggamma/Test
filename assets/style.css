@@ -5,6 +5,7 @@
   * { box-sizing: border-box; }
   
   html, body {
+    background: #8c8fc6;
     margin: 0;
     padding: 0;
   }
