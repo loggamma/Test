@@ -11,7 +11,9 @@
 <body>
 
   <div id="header-container"></div>
-  <div id="banner-container" data-title="Solstice Math Olympiads"></div>
+  <section class="banner-box">
+    <h1>Title</h1>
+  </section>
 
 </body>
 
@@ -20,15 +22,6 @@
     .then(response => response.text())
     .then(data => {
       document.getElementById("header-container").innerHTML = data;
-    });
-  fetch("assets/includes/banner.html")
-    .then(r => r.text())
-    .then(html => {
-      const banner = document.getElementById("banner-container");
-      if (!banner) return;
-      banner.innerHTML = html;
-      const title = banner.dataset.title || "Untitled Page";
-      document.getElementById("banner-title").textContent = title;
     });
 </script>
   
