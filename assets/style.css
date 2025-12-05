@@ -103,41 +103,22 @@
 
   /* END OF HEADER */
 
-  /* BANNER STUFF */
-
-  .banner{
-    position:relative;
-    height:48vh;          
-    min-height:220px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
-    color:#fff;
-    overflow:hidden;
+  .banner-box {
+    width: 100%;
+    padding: 60px 20px;
+    background: #1d2038;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;   
   }
   
-  .banner-overlay{
-    position:absolute;
-    inset:0;
-    background:linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35));
-    pointer-events:none;
-  }
-  
-  .banner-title{
-    position:relative; 
-    text-align:center;
-    z-index:2;
-  }
-  .banner-title h1{
-    margin:0;
-    font-family:'Cinzel Decorative',serif;
-    font-size:clamp(28px,6vw,96px); 
-    letter-spacing:1px;
-    color:#fff;
-    text-shadow:0 6px 24px rgba(0,0,0,0.45);
+  .banner-box h1 {
+    margin: 0;
+    font-size: 3.8rem;
+    color: white;
+    font-family: 'Cinzel Decorative', serif;
+    text-align: center;
   }
   /* END OF BANNER*/
 </style>
