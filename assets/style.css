@@ -57,7 +57,8 @@ html, body {
 
 .nav-hitbox {
   display: inline-block;
-  padding: 2px 2px 10px 2px; 
+  padding: 2px 2px 18px 2px;
+  transform: translateY(8px);
 }
 
 .nav-hitbox:hover .nav-link {
@@ -77,7 +78,7 @@ html, body {
 
   opacity: 1;
   transition: opacity .2s ease;
-}
+ }
 
 .nav-link:hover {
   opacity: 0.7;
