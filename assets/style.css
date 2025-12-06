@@ -193,14 +193,45 @@ html, body {
 
 /* == Animations == */
 
-@keyframes flyInLeft {
+.animate-on-scroll { 
+  opacity: 0; 
+}
+
+.visible { 
+  opacity: 1; 
+}
+
+@keyframes flyInLeft30 {
   from { transform: translateX(-30px); opacity: 0; }
   to   { transform: translateX(0); opacity: 1; }
 }
+.visible.fly-in-left30 {
+  animation: flyInLeft 0.7s cubic-bezier(.4,1.8,.7,1) forwards; 
+}
 
-@keyframes flyInRight {
+@keyframes flyInLeft48 {
+  from { transform: translateX(-48px); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+.visible.fly-in-left48 {
+  animation: animation: flyInLeft 0.72s cubic-bezier(.4,1.8,.7,1) forwards;
+} 
+
+@keyframes flyInRight40 {
   from { transform: translateX(40px); opacity: 0; }
   to   { transform: translateX(0); opacity: 1; }
+}
+.visible.fly-in-right40 { 
+  animation: flyInRight 1.1s cubic-bezier(.4,1.8,.7,1) forwards; 
+}
+
+@keyframes flyInUp24 {
+  from { transform: translateY(24px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+.visible.fly-in-up24 {
+  animation: flyInUp 0.92s cubic-bezier(.4,1.8,.7,1) forwards;
+  animation-delay: 0.14s;
 }
 
 @keyframes smallBounce {
@@ -210,8 +241,14 @@ html, body {
   85%  { transform: scale(1.02); }
   100% { transform: scale(1); opacity: 1; }
 }
+.visible.small-bounce { 
+  animation: smallBounce 1s forwards; 
+}
+.visible.fast-small-bounce {
+  animation: animation: smallBounce 0.72s cubic-bezier(.4,1.8,.7,1) forwards;
+}
 
-@keyframes scaleBounce {
+@keyframes big-bounce {
   0%   { transform: scale(0.93); opacity: 0; }
   25%  { transform: scale(1.05); opacity: 1; }
   45%  { transform: scale(0.985); }
@@ -220,32 +257,13 @@ html, body {
   90%  { transform: scale(1.01); }
   100% { transform: scale(1); opacity: 1; }
 }
-
-.animate-on-scroll { 
-  opacity: 0; 
-}
-
-.visible { 
-  opacity: 1; 
-}
-
-.visible.fly-in-left {
-  animation: flyInLeft 0.7s cubic-bezier(.4,1.8,.7,1) forwards; 
-}
-
-.visible.fly-in-right { 
-  animation: flyInRight 1.1s cubic-bezier(.4,1.8,.7,1) forwards; 
-}
-
-.visible.bounce-in-header { 
-  animation: smallBounce 1s forwards; 
-}
-
-.visible.bounce-in { 
+.visible.big-bounce { 
   animation: scaleBounce 1s forwards; transform-origin: center; 
 }
 
 /* == Layouts ==*/
+
+/* = Box Style 1 =*/
 
 .lightblue-box {
   font-family: 'Trebuchet MS', sans-serif;
@@ -260,6 +278,7 @@ html, body {
   box-shadow: 0 2px 14px rgba(0,0,0,0.04);
 }
 
+/* = Box Style 2 =*/
 .darkblue-box {
   background: #23255a;
   border-radius: 32px;
@@ -290,6 +309,67 @@ html, body {
   opacity: 0.38;
   border-radius: 3px;
   margin: 18px 0 24px 0;
+}
+
+/* = Box Style 3 =*/
+.section-card {
+  border-radius: 32px;
+  margin: 24px auto;
+  max-width: 850px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  overflow: hidden;
+  background: none;
+  opacity: 0;
+}
+
+.section-card-header {
+  font-family: 'Cinzel Decorative', cursive, serif;
+  font-size: 2.2rem;
+  color: #fff;
+  font-weight: bold;
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1.3px;
+}
+
+.section-card-body {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 1.35rem;
+  color: #232323;
+  margin: 0;
+  opacity: 0;
+  font-weight: 500;
+  line-height: 1.32;
+}
+
+.section-card-divider {
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(35,37,90,0) 0%,
+    rgba(46,48,101,0.02) 5%,
+    rgba(57,59,112,0.04) 10%,
+    rgba(69,70,123,0.06) 15%,
+    rgba(80,82,134,0.08) 20%,
+    rgba(92,94,145,0.10) 25%,
+    rgba(104,106,156,0.12) 30%,
+    rgba(115,117,167,0.14) 35%,
+    rgba(127,129,178,0.16) 40%,
+    rgba(139,141,189,0.18) 45%,
+    rgba(150,153,200,0.20) 50%,
+    rgba(162,165,211,0.22) 55%,
+    rgba(174,176,222,0.24) 60%,
+    rgba(185,188,233,0.26) 65%,
+    rgba(197,200,244,0.28) 70%,
+    rgba(209,212,250,0.30) 75%,
+    rgba(220,224,252,0.32) 80%,
+    rgba(232,235,253,0.34) 85%,
+    rgba(244,247,254,0.36) 90%,
+    rgba(250,251,255,0.38) 95%,
+    rgba(255,255,255,0.4) 100%
+  );
+  border: none;
 }
 
 /* == Buttons == */
