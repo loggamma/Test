@@ -331,6 +331,9 @@ html, body {
   color: #222;
   line-height: 1.6;
 }
+.darkblue-box-section .button-row {
+  margin: 12px 0 0 0;
+}
 .darkblue-box-section-body li {
   margin-left: 20px;
 }
