@@ -298,6 +298,7 @@ html, body {
 }
 
 .darkblue-box-section {
+  width: 90%;
   background: rgba(255,255,255,0.75);
   border-radius: 16px;
   padding: 20px 24px;
