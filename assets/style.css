@@ -329,7 +329,7 @@ html, body {
   opacity: 0;
 }
 .darkblue-box-section.visible .darkblue-box-section-body {
-  animation: flyInLeft 0.8s cubic-bezier(0.33,1,0.68,1) forwards;
+  animation: flyInLeft30 0.8s cubic-bezier(0.33,1,0.68,1) forwards;
   animation-delay: 0.12s;
 }
 
