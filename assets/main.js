@@ -8,18 +8,19 @@ fetch("/assets/includes/header.html")
       header.classList.toggle('scrolled', window.scrollY > 10);
     });
   });
-
-/* ==== SPONSORS ==== */
-function loadSponsor(name) {
-  fetch(`/assets/includes/sponsors/${name}.html`)
-    .then(r => r.text())
-    .then(html => {
-      const s = document.currentScript;
-      s.insertAdjacentHTML("beforebegin", html); 
-      s.remove();
-    });
+/* ==== FAQ ==== */
+function toggleFAQ(e){
+  document.querySelectorAll('.faq-box').forEach(b=>{
+    if(b !== e) {
+      b.classList.remove('open');
+      b.classList.remove('closing');
+    }
+  });
+  if (e.classList.contains('open')) {
+    e.classList.add('closing');
+  }
+  e.classList.toggle('open');
 }
-
 /* ==== OBSERVERS ==== */
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
