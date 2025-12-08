@@ -14,8 +14,9 @@ function loadSponsor(name) {
   fetch(`/assets/includes/sponsors/${name}.html`)
     .then(r => r.text())
     .then(html => {
-      document.currentScript.parentElement.insertAdjacentHTML("beforeend", html);
-      document.currentScript.remove();
+      const s = document.currentScript;
+      s.insertAdjacentHTML("beforebegin", html); 
+      s.remove();
     });
 }
 
