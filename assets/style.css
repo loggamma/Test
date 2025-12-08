@@ -377,7 +377,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 12px;
   opacity: 0;
 }
 .sponsor-logo.platinum {width: 500px;}
