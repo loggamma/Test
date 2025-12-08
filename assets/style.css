@@ -356,7 +356,7 @@ html, body {
 }
 
 /* Sponsors */
-.sponsor-row {
+.sponsor-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
