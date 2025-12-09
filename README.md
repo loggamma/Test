@@ -1,1 +1,1 @@
-Currently a WIP
+Official Solstice Math Olympiads website
