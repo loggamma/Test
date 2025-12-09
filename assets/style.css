@@ -145,6 +145,21 @@ html, body {
 }
 
 /* ================ */
+/* ==== FOOTER ==== */
+/* ================ */
+
+.footer {
+  text-align: center;
+  padding: 18px 0;
+  margin-top: 40px;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  color: #eee;
+  background: #1d2038;
+  border-radius: 12px 12px 0 0;
+}
+
+/* ================ */
 /* ==== BANNER ==== */
 /* ================ */
 
@@ -180,7 +195,8 @@ html, body {
 /* ==== MAIN ==== */
 /* ============== */
 
-/* == Animations == */
+/* ================== */
+/* === Animations === */
 
 .animate-on-scroll { 
   opacity: 0; 
@@ -260,9 +276,10 @@ html, body {
   100% { transform: translateX(-50%); }
 }
 
-/* == Layouts ==*/
+/* =============== */
+/* === LAYOUTS === */
 
-/* = Box Style 1 (MAIN) = */
+/* == Box Style 1 (MAIN) == */
 
 .darkblue-box {
   background: #23255a;
@@ -312,7 +329,7 @@ html, body {
   animation: flyInLeft30 0.7s cubic-bezier(.4,1.8,.7,1) forwards;
 }
 
-/* Section */
+/* = Section = */
 
 .darkblue-box-section {
   width: 90%;
@@ -359,7 +376,7 @@ html, body {
   animation-delay: 0.12s;
 }
 
-/* Files */
+/* = Files = */
 .file-viewer iframe {
   border: none;
   width: 100%;
@@ -371,7 +388,8 @@ html, body {
   animation-delay: 0.12s;
 }
 
-/* = Box Style 2 (Card) = */
+/* == Box Style 2 (Card) == */
+
 .section-card {
   border-radius: 32px;
   margin: 24px auto;
@@ -433,7 +451,7 @@ html, body {
   border: none;
 }
 
-/* = Box Style 3 (Descriptions) */
+/* == Box Style 3 (Descriptions) == */
 
 .lightblue-box {
   font-family: 'Trebuchet MS', sans-serif;
@@ -451,7 +469,7 @@ html, body {
   animation: flyInLeft30 0.7s cubic-bezier(.4,1.8,.7,1) forwards; 
 }
 
-/* = Box Style 4 (Schedule) = */
+/* == Box Style 4 (Schedule) == */
 
 .schedule-box {
   background: none;
@@ -532,7 +550,7 @@ html, body {
   animation: flyInLeft20 0.6s ease-out forwards;
 }
 
-/* = Box Style 5 (Bios) = */
+/* == Box Style 5 (Bios) == */
 
 .bio-box {
   background: #23255a;
@@ -590,7 +608,11 @@ html, body {
   animation: flyInRight40 1.1s cubic-bezier(.4,1.8,.7,1) forwards;
 }
 
-/* = Sponsors =*/
+/* ===================== */
+/* === MISCELLANEOUS === */
+
+/* == Sponsors == */
+
 .sponsor-container {
   display: flex;
   flex-wrap: wrap;
@@ -624,7 +646,8 @@ html, body {
   animation: fadeUp 0.6s ease-out forwards;
 }
 
-/* = FAQ = */
+/* == FAQ == */
+
 .faq-box {
   font-family:'Trebuchet MS',sans-serif;
   font-size:18px;
@@ -685,7 +708,7 @@ html, body {
   transform:rotate(180deg);
 }
 
-/* = Scrolling Header = */
+/* == Scrolling Header == */
 
 .scroll-banner-box {
   max-width: 850px;
