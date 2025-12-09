@@ -11,7 +11,7 @@ fetch("/assets/includes/header.html")
 
 /* ==== FOOTER ==== */
 fetch("/assets/includes/footer.html")
-  .then(r => r.text())
+  .then(response => response.text())
   .then(html => {
     document.getElementById("footer-container").innerHTML = html;
   });
