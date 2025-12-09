@@ -192,12 +192,9 @@
       0px 16px 40px rgba(0,0,0,0.1);
   }
   
-  /* ============== */
-  /* ==== MAIN ==== */
-  /* ============== */
-  
-  /* ================== */
-  /* === Animations === */
+  /* ==================== */
+  /* ==== ANIMATIONS ==== */
+  /* ==================== */
   
   .animate-on-scroll { 
     opacity: 0; 
@@ -277,10 +274,12 @@
     100% { transform: translateX(-50%); }
   }
   
-  /* =============== */
-  /* === LAYOUTS === */
-  
-  /* == Box Style 1 (MAIN) == */
+  /* ================= */
+  /* ==== LAYOUTS ==== */
+  /* ================= */
+
+  /* ================= */
+  /* == Box Style 1 == */
   
   .darkblue-box {
     background: #23255a;
@@ -329,8 +328,8 @@
   .darkblue-box-text.visible {
     animation: flyInLeft30 0.7s cubic-bezier(.4,1.8,.7,1) forwards;
   }
-  
-  /* = Section = */
+
+  /* -- Section -- */
   
   .darkblue-box-section {
     width: 90%;
@@ -377,7 +376,8 @@
     animation-delay: 0.12s;
   }
   
-  /* = Files = */
+  /* -- Files -- */
+
   .file-viewer iframe {
     border: none;
     width: 100%;
@@ -388,8 +388,9 @@
     animation: flyInLeft30 0.8s cubic-bezier(0.33, 1, 0.68, 1) forwards;
     animation-delay: 0.12s;
   }
-  
-  /* == Box Style 2 (Card) == */
+
+  /* ================= */
+  /* == Box Style 2 == */
   
   .section-card {
     border-radius: 32px;
@@ -451,8 +452,9 @@
     background: linear-gradient(to bottom, rgba(35,37,90,0) 0%, rgba(255,255,255,0.4) 100%);
     border: none;
   }
-  
-  /* == Box Style 3 (Descriptions) == */
+
+  /* ================= */
+  /* == Box Style 3 == */
   
   .lightblue-box {
     font-family: 'Trebuchet MS', sans-serif;
@@ -469,8 +471,9 @@
   .lightblue-box.visible {
     animation: flyInLeft30 0.7s cubic-bezier(.4,1.8,.7,1) forwards; 
   }
-  
-  /* == Box Style 4 (Schedule) == */
+
+  /* ================= */
+  /* == Box Style 4 == */
   
   .schedule-box {
     background: none;
@@ -550,8 +553,9 @@
   .schedule-section-body-bullets li li.visible{
     animation: flyInLeft20 0.6s ease-out forwards;
   }
-  
-  /* == Box Style 5 (Bios) == */
+
+  /* ================= */
+  /* == Box Style 5 == */
   
   .bio-box {
     background: #23255a;
@@ -609,9 +613,11 @@
     animation: flyInRight40 1.1s cubic-bezier(.4,1.8,.7,1) forwards;
   }
   
-  /* ===================== */
-  /* === MISCELLANEOUS === */
-  
+  /* ======================= */
+  /* ==== MISCELLANEOUS ==== */
+  /* ======================= */
+
+  /* ============== */
   /* == Sponsors == */
   
   .sponsor-container {
@@ -646,7 +652,8 @@
     opacity: 1;
     animation: fadeUp 0.6s ease-out forwards;
   }
-  
+
+  /* ========= */
   /* == FAQ == */
   
   .faq-box {
@@ -708,7 +715,8 @@
   .faq-box.open .arrow {
     transform:rotate(180deg);
   }
-  
+
+  /* ====================== */
   /* == Scrolling Header == */
   
   .scroll-banner-box {
@@ -734,7 +742,8 @@
     color: #23255a;
     padding: 0 40px;
   }
-  
+
+  /* ============= */
   /* == Buttons == */
   
   .button-row {
