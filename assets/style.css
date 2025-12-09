@@ -327,6 +327,7 @@
     border-radius: 16px;
     padding: 20px 24px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
   }
   .darkblue-box-section.visible {
     animation: flyInUp20 0.8s cubic-bezier(0.33, 1, 0.68, 1) forwards;
