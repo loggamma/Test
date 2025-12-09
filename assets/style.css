@@ -409,6 +409,9 @@ html, body {
   padding: 26px 32px 26px 32px;
   text-align: center;
 }
+.section-card-body .button-row {
+  margin: 12px 0 0 0;
+}
 .section-card-body-text {
   font-family: 'Trebuchet MS', sans-serif;
   font-size: 22px;
