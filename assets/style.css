@@ -401,7 +401,7 @@
     text-align: center;
   }
   .section-card-body .button-row {
-    margin-top: 12px;
+    margin: 12px 0 0 0;
   }
   .section-card-body-text {
     font-family: 'Trebuchet MS', sans-serif;
